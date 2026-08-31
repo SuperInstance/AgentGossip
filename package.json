@@ -1,0 +1,28 @@
+{
+  "name": "agentgossip",
+  "version": "0.1.0",
+  "description": "Fleet gossip for the quilt cellular doctrine: mint receipts + hash-chained journals + anti-entropy sync so the fleet moves as one.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "agentgossip": "bin/agentgossip.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "cli": "tsx src/cli.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
